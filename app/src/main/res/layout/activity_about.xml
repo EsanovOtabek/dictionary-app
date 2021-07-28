@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".about"
+    android:background="#ffffff"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="25dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/avatar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fio"
+                android:textColor="#111"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:padding="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/imb1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@mipmap/telegram"
+                    android:layout_margin="20dp"
+                    android:background="#ffffff"/>
+
+                <ImageButton
+                    android:id="@+id/imb2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@mipmap/email"
+                    android:layout_margin="20dp"
+                    android:background="#ffffff"/>
+
+                <ImageButton
+                    android:id="@+id/imb4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@mipmap/email"
+                    android:layout_margin="20dp"
+                    android:background="#ffffff"/>
+
+                <ImageButton
+                    android:id="@+id/imb3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@mipmap/telephone"
+                    android:layout_margin="20dp"
+                    android:background="#ffffff"/>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cv_txt"
+                android:layout_margin="20dp"
+                android:justificationMode="inter_word"
+                android:textSize="18sp"
+                android:textColor="#222"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
